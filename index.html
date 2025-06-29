@@ -1,24 +1,405 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 4.5 3º Secundaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 4.5 3º Secundaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes consoliden su comprensión práctica de los operadores lógicos (`and`, `or`) en MicroPython, aplicándolos en un nuevo mini-proyecto que integre múltiples entradas y salidas.</li>
+                                        <li>Que sean capaces de diseñar e implementar un sistema que requiera condiciones lógicas precisas para activarse.</li>
+                                        <li>Que refuercen su entendimiento de cómo la lógica booleana es la base para la construcción de sistemas de Inteligencia Artificial que exigen decisiones combinatorias de alta fidelidad.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis profundo y contextualización de la misión con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos, síntesis de "insights" y reflexión iterativa.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un sistema programado en MicroPython que implementa una lógica booleana compleja (`and`, `or`) para activar una salida específica, demostrando precisión y fiabilidad en condiciones combinatorias.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable y de buena velocidad.</li>
+                                        <li>Cuentas de alumno para las plataformas relevantes.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) operativo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2 estudiantes.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión del Entorno Digital y Físico (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode (Python editor).</li>
+                                                <li>Tener kits Micro:bit v2 con IOTbit listos y organizados.</li>
+                                                <li>Tener la presentación de diapositivas (1-10) lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong>
+                                            <ul>
+                                                <li>Revisar el flujo de esta sesión, enfocándose en la aplicación práctica de `and`/`or`, la gestión de estado (banderas booleanas) y el 'debouncing'.</li>
+                                                <li>Comprender el código Python de ejemplo generado por Xolo para esta misión.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong>
+                                            <ul>
+                                                <li>Tener un Micro:bit con IOTbit programado con un ejemplo de alarma de confirmación dual (A Y B presionados) para una demostración inicial si es necesario.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Establecer el tono profesional, activar la personalización de la IA y presentar la misión del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Introducción a la Misión</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque estratégico de la misión del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Buenos días, equipo. La sesión anterior exploró el poder de `and` y `or`. Hoy, reforzaremos esta habilidad crucial con un nuevo desafío. La precisión lógica es vital en cualquier sistema inteligente, desde control de acceso hasta pilotaje automático. Su Micro:bit se convertirá en un 'guardián lógico' exigiendo condiciones específicas."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación y Personalización de Xolo</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo **individual**, proporcionando a Xolo la información necesaria para la personalización.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para iniciar, de forma **individual**, abran su interfaz de Xolo y salúdenlo. Incluyan su **perfil de aprendizaje** y un **interés personal actual**. Ejemplo: <strong>'Hola Xolo, soy [Tu Nombre], perfil [Ingeniero], y pienso en cómo los sistemas de seguridad biométricos necesitan varias verificaciones. Listo.'</strong> Confirmen haber recibido su saludo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar el desafío técnico y conceptual del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Desafío Conceptual y Técnico</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto o la herramienta central de la sesión, contextualizando su relevancia profesional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy consolidaremos la lógica combinatoria. Esta precisión es crucial para la autenticación multifactor, diagnósticos médicos y protocolos de seguridad aérea. Sus Micro:bits simularán sistemas que exigen condiciones precisas para activarse. Reforzarán cómo la lógica booleana es la base para IAs de alta fidelidad."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "I Can Statement"</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión en un formato claro y orientado a la competencia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar, podrán: <strong>'Consolidar el uso práctico de `and`/`or` en MicroPython para un nuevo mini-proyecto, diseñar e implementar sistemas con condiciones lógicas precisas, y reforzar la lógica booleana como base de IAs de alta fidelidad.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Aprendizaje Individual) ⏰ 10 minutos</h2>
+                <p>Facilitar un aprendizaje personalizado e individual con Xolo para comprender los operadores lógicos y su importancia en sistemas de IA complejos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción para el Aprendizaje Estratégico</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador dirige a los alumnos para que inicien su aprendizaje **individual** con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. De forma **individual**, formulen a Xolo: <strong>'Xolo, profundiza en la aplicación práctica de `and` y `or` en MicroPython. Dame un ejemplo real donde `and` es fundamental para la seguridad y otro donde `or` es fundamental para la redundancia. Explícame por qué mezclar estos operadores requiere atención a la precedencia.'</strong> Presten atención a la precisión y precedencia."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Análisis y Profundización Conceptual</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador modera una breve discusión grupal para sintetizar los hallazgos individuales del A.I. GYM y propone preguntas para que los alumnos profundicen con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, analicen las explicaciones de Xolo. Si algo no les queda claro, pídanle que profundice. Por ejemplo: <strong>'Xolo, ¿cómo `and` garantiza seguridad en una parada de emergencia industrial?'</strong> o <strong>'¿Cómo `or` asegura fiabilidad en un sistema de detección de intrusos?'</strong>. También: <strong>'¿Por qué los paréntesis son cruciales al mezclar operadores?'</strong> El objetivo es comprender cómo la precedencia y la claridad son habilidades esenciales para sistemas robustos."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Trabajo en Equipo) ⏰ 22 minutos</h2>
+                <p>El facilitador supervisa la ejecución del "Flujo de Creación Aumentada" en equipos, desde el diseño hasta la implementación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Formación de Equipos e Instrucción</h3>
+                            <p>(Proyectar Diapositiva 7) El facilitador instruye a los alumnos a formar sus equipos de trabajo para el resto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Con su comprensión consolidada de la lógica combinatoria, es hora de aplicarla. Formen sus equipos de proyecto de **2 personas**. La colaboración en lógica compleja es clave."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideación y Definición de la "Vibe" en Equipo</h3>
+                            <p>El equipo diseña una intención para un mini-sistema con botones A/B y una combinación de `and`/`or` para activar una salida, describiéndola a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Su misión es 'El Desafío Lógico'. Diseñen un mini-sistema que active una salida (LED o buzzer) solo si se cumplen condiciones lógicas específicas con botones A y B, usando `and` o `or`. El objetivo es la activación precisa. Describan su idea a Xolo con detalle. Ejemplo de input a Xolo: <strong>'Xolo, queremos una 'Alarma de Confirmación Dual': LED azul P1 y buzzer P0 se activan SOLO SI botón A *Y* botón B se presionan simultáneamente. Se resetea al soltar ambos. Mostrar 'Esperando...' y 'ACTIVADO!' en pantalla.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Generación de Código por IA</h3>
+                            <p>(Proyectar Diapositiva 8) Xolo genera el esqueleto de código Python basado en la "vibe" del equipo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Xolo generará el esqueleto de código Python basado en su 'vibe'. Lo que se muestra a continuación es el tipo de código que Xolo generaría para esta lógica. Su tarea es analizarlo."</p>
+<pre>
+# Importaciones necesarias
+
+from microbit import *
+from machine import Pin
+import time
+from iotit import * # Para usar Pin.P0, P1, P8
+
+# --- Pines y componentes ---
+led_azul = Pin(Pin.P1, Pin.OUT) # LED azul en P1
+buzzer = Pin(Pin.P0, Pin.OUT) # Buzzer en P0
+
+# --- Variables de estado y control ---
+# Bandera para asegurar que la alarma solo se active una vez por pulsación dual
+alarma_activa_actualmente = False
+
+# --- Función de Configuración Inicial ---
+def setup_sistema():
+    display.scroll("Alarma Dual ON")
+    led_azul.value(0) # Apagar LED al inicio
+    buzzer.value(0) # Apagar buzzer al inicio
+    display.clear()
+
+# Ejecutar configuración inicial
+setup_sistema()
+
+# --- Bucle principal del programa ---
+while True:
+    # Leer el estado de los botones
+    boton_A_presionado = button_a.is_pressed()
+    boton_B_presionado = button_b.is_pressed()
+
+    # --- Lógica de Activación de Alarma (Confirmación Dual) ---
+    # Si AMBOS botones están presionados
+    if boton_A_presionado and boton_B_presionado:
+        # Si la alarma no estaba ya activa por esta misma pulsación
+        if not alarma_activa_actualmente:
+            led_azul.value(1) # Encender LED
+            buzzer.value(1) # Encender buzzer
+            display.scroll("ACTIVADO!")
+            print("Alarma Activada: Confirmación Dual.")
+            alarma_activa_actualmente = True # Marcar alarma como activa
+            time.sleep(2) # Mantener alarma activa por 2 segundos
+            buzzer.value(0) # Apagar buzzer después del tiempo
+            led_azul.value(0) # Apagar LED después del tiempo
+            display.clear()
+    else:
+        # Si NINGUNO de los botones está presionado (ambos liberados)
+        if not boton_A_presionado and not boton_B_presionado:
+            # Resetear la bandera para permitir una nueva activación
+            if alarma_activa_actualmente:
+                print("Botones liberados. Alarma lista para re-activar.")
+            alarma_activa_actualmente = False
+            display.show(Image.ASLEEP) # Icono de espera
+
+    time.sleep_ms(50) # Pequeña pausa para evitar rebotes y gestionar el bucle
+</pre>
+<p><em><!-- NOTA PARA EL FACILITADOR: Este es el código que Xolo generará para el equipo. No debe ser leído directamente a la clase, sino usado como referencia para la siguiente fase de análisis. --></em></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Análisis de Código Guiado ("Taming the Genie Lvl 2")</h3>
+                            <p>(Proyectar Diapositiva 9) El equipo analiza el código generado por Xolo, profundizando en su estructura y lógica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Su rol ahora es 'auditor de lógica'. Analicen el código. Pregúntenle a Xolo: <strong>'¿Cómo la combinación de `if (A and B)` y `if not bandera` asegura activación única y precisa?'</strong> También: <strong>'¿Cómo se logra el reset solo al liberar AMBOS botones?'</strong> y <strong>'¿Qué pasaría si la bandera no se usara o se reseteara antes de tiempo?'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Implementación y Debugging Colaborativo</h3>
+                            <p>(Proyectar Diapositiva 10) El equipo implementa el código en el Micro:bit y depura posibles errores con la asistencia de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Implementen el código. Conecten LED azul a P1 y buzzer a P0. Carguen y prueben: solo A, solo B, ambos, y soltar ambos. Si la alarma se activa repetidamente, pregunten a Xolo: <strong>'¿Por qué la bandera no detiene las activaciones repetidas?'</strong> Si la pantalla no se actualiza o 'se queda pegada', pregunten: <strong>'¿Por qué el display no se resetea al liberar los botones?'</strong> La depuración de estados exige precisión."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión en Equipo) ⏰ 5 minutos</h2>
+                <p>El facilitador modera la presentación de resultados y una reflexión final enfocada en el proceso colaborativo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: "Think" (Individual)</h3>
+                            <p>Instrucción para la reflexión individual sobre el proceso de aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Individualmente, piensen: '¿Cuál fue el mayor desafío al lograr la precisión combinatoria? ¿Cómo esta experiencia les prepara para entender el rigor lógico de IAs en reconocimiento facial o detección de fraude?'"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "Pair" (Parejas)</h3>
+                            <p>Instrucciones para la discusión en parejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Ahora, discutan sus reflexiones. Compartan desafíos y aprendizajes sobre la precisión lógica. ¿Qué consecuencias graves tendría un error en `and` o `or` en una IA crítica?"</p>
+                            </div>
+                        </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "Share" (Grupo)</h3>
+                            <p>El facilitador invita a algunos equipos a compartir sus conclusiones con la clase.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Algunos equipos, compartan sus conclusiones. ¿Qué visión tienen sobre la importancia de la lógica booleana para la IA?"</p>
+                            <p class="dialogue user"><strong>Equipo 1:</strong> "El mayor desafío fue que la alarma no se activara si solo presionabas un botón. Aprendimos que el `and` es muy estricto. En un sistema de reconocimiento facial, un `or` en lugar de `and` podría ser un fallo de seguridad."</p>
+                            <p class="dialogue user"><strong>Equipo 2:</strong> "Nos dimos cuenta de que la bandera de estado es crucial para evitar repeticiones. En detección de fraude, un `or` amplio generaría muchas falsas alarmas. Se necesita un `and` con más condiciones para ser preciso."</p>
+                            <p class="dialogue user"><strong>Equipo 3:</strong> "La lógica de reseteo fue lo más difícil. Nos enseñó a pensar en todos los estados posibles. En diagnóstico médico, un `or` erróneo daría falsos positivos, asustando a los pacientes. La IA debe ser muy precisa."</p>
+                            </div>
+                        </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis Final</h3>
+                            <p>El facilitador cierra la sesión con una reflexión consolidada sobre el aprendizaje del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Felicidades, equipo. Han consolidado la lógica combinatoria, diseñando sistemas precisos con `and` y `or`. Experimentaron la gestión de estados para fiabilidad. Han comprendido cómo la lógica booleana es la base para IAs críticas de alto impacto. Han dominado la aplicación práctica y precisa de operadores lógicos, y cómo la gestión de estados es clave para la fiabilidad de interacciones complejas. Finalizamos este módulo. La próxima sesión explorará la gestión de recursos hídricos con humedad del suelo y nivel de agua."</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
